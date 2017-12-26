@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="FollowerTableViewCell" customModule="QravedOnlineTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FollowerTableViewCell" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Sm-Xn-oTo">
+                        <rect key="frame" x="0.0" y="51" width="320" height="16"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Uo4-2f-SBp"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Ic-cz-E3Y">
+                        <rect key="frame" x="0.0" y="2" width="320" height="48"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGN-gS-779" customClass="ViewImageShadow" customModule="QravedOnlineTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_follower" translatesAutoresizingMaskIntoConstraints="NO" id="Hgp-Ca-mB9" customClass="ImageFollowerPicture" customModule="QravedOnlineTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="SQG-eJ-EVF"/>
+                                    <constraint firstItem="Hgp-Ca-mB9" firstAttribute="top" secondItem="SGN-gS-779" secondAttribute="top" id="dI0-y5-2O0"/>
+                                    <constraint firstItem="Hgp-Ca-mB9" firstAttribute="leading" secondItem="SGN-gS-779" secondAttribute="leading" id="jzQ-Jz-beO"/>
+                                    <constraint firstAttribute="height" constant="48" id="nWr-DQ-42P"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hgp-Ca-mB9" secondAttribute="trailing" id="sN0-5p-SSd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hgp-Ca-mB9" secondAttribute="bottom" id="yLs-eX-q0y"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BG8-O0-kYe">
+                                <rect key="frame" x="56" y="0.0" width="176" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2O-rD-h4A">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.87" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@handle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mce-uU-2aI">
+                                        <rect key="frame" x="0.0" y="24" width="176" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4r-yg-0yO">
+                                <rect key="frame" x="240" y="0.0" width="80" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhO-61-jid" customClass="ButtonFollow" customModule="QravedOnlineTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="9.5" width="80" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Cl0-tg-efh"/>
+                                            <constraint firstAttribute="height" constant="29" id="ekf-eh-mTS"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ic_button_follow"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="82m-DP-Lc0"/>
+                                    <constraint firstItem="FhO-61-jid" firstAttribute="centerY" secondItem="Z4r-yg-0yO" secondAttribute="centerY" id="LI8-VE-hfY"/>
+                                    <constraint firstItem="FhO-61-jid" firstAttribute="centerX" secondItem="Z4r-yg-0yO" secondAttribute="centerX" id="dUf-BX-nM4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="9HE-fX-fEs"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Ic-cz-E3Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kmy-BB-hCK"/>
+                    <constraint firstAttribute="trailing" secondItem="1Sm-Xn-oTo" secondAttribute="trailing" id="LZT-j5-7SG"/>
+                    <constraint firstItem="1Sm-Xn-oTo" firstAttribute="top" secondItem="2Ic-cz-E3Y" secondAttribute="bottom" constant="1" id="Qdc-sa-XCP"/>
+                    <constraint firstItem="1Sm-Xn-oTo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vbx-3n-Vp7"/>
+                    <constraint firstAttribute="trailing" secondItem="2Ic-cz-E3Y" secondAttribute="trailing" id="aby-1J-vJ5"/>
+                    <constraint firstItem="2Ic-cz-E3Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="ahO-Ga-sog"/>
+                    <constraint firstAttribute="bottom" secondItem="1Sm-Xn-oTo" secondAttribute="bottom" id="gx5-KF-VFx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <point key="canvasLocation" x="33" y="114"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_button_follow" width="84" height="33"/>
+        <image name="image_follower" width="368" height="522"/>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TrendingGroupsCollectionViewCell" customModule="QravedOnlineTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_card_nature" translatesAutoresizingMaskIntoConstraints="NO" id="PxQ-ZD-kBe">
+                        <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEb-kV-I8L" customClass="ViewImageOverLayCard" customModule="QravedOnlineTest" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                        <color key="backgroundColor" red="0.21176470588235294" green="0.25098039215686274" blue="0.27843137254901962" alpha="0.5" colorSpace="calibratedRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nature" translatesAutoresizingMaskIntoConstraints="NO" id="CQY-eO-pWf">
+                        <rect key="frame" x="15" y="35" width="31" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="CQY-eO-pWf" secondAttribute="height" multiplier="1:1" id="bjg-W6-q5Y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eha-PL-26b">
+                        <rect key="frame" x="15" y="81" width="46.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="SdS-Md-vy9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KEb-kV-I8L" firstAttribute="width" secondItem="PxQ-ZD-kBe" secondAttribute="width" id="6FJ-UL-ver"/>
+                <constraint firstItem="CQY-eO-pWf" firstAttribute="leading" secondItem="eha-PL-26b" secondAttribute="leading" id="FAZ-Ix-Poc"/>
+                <constraint firstItem="eha-PL-26b" firstAttribute="top" secondItem="CQY-eO-pWf" secondAttribute="bottom" constant="15" id="FEm-bX-laI"/>
+                <constraint firstItem="KEb-kV-I8L" firstAttribute="centerY" secondItem="PxQ-ZD-kBe" secondAttribute="centerY" id="IKC-aV-Tyz"/>
+                <constraint firstItem="PxQ-ZD-kBe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T4s-da-3QC"/>
+                <constraint firstItem="KEb-kV-I8L" firstAttribute="centerX" secondItem="PxQ-ZD-kBe" secondAttribute="centerX" id="TTl-q1-fZ5"/>
+                <constraint firstItem="PxQ-ZD-kBe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="V4q-3j-LxR"/>
+                <constraint firstItem="eha-PL-26b" firstAttribute="leading" secondItem="PxQ-ZD-kBe" secondAttribute="leading" constant="15" id="WJi-9X-E3r"/>
+                <constraint firstItem="eha-PL-26b" firstAttribute="bottom" secondItem="PxQ-ZD-kBe" secondAttribute="bottom" constant="-15" id="a8B-hr-uPW"/>
+                <constraint firstItem="KEb-kV-I8L" firstAttribute="height" secondItem="PxQ-ZD-kBe" secondAttribute="height" id="imR-OB-7kw"/>
+                <constraint firstAttribute="trailing" secondItem="PxQ-ZD-kBe" secondAttribute="trailing" id="qcg-jM-UCQ"/>
+                <constraint firstItem="CQY-eO-pWf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="35" id="ubl-64-u1r"/>
+                <constraint firstAttribute="bottom" secondItem="PxQ-ZD-kBe" secondAttribute="bottom" id="xEh-hd-NCK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="147" height="149"/>
+            <point key="canvasLocation" x="109.5" y="167.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_nature" width="34" height="34"/>
+        <image name="image_card_nature" width="112" height="112"/>
+    </resources>
+</document>

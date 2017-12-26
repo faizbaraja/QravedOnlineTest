@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieCastViewController" customModule="QravedOnlineTest" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionViewMovieCast" destination="CdE-2f-pbL" id="VoP-aR-QTg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gde-xk-Vgp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lY4-9e-tXK">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dk0-jd-ESB">
+                                    <rect key="frame" x="16" y="0.0" width="343" height="21"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="dk0-jd-ESB" firstAttribute="leading" secondItem="lY4-9e-tXK" secondAttribute="leading" constant="16" id="9uh-Uc-1oY"/>
+                                <constraint firstAttribute="trailing" secondItem="dk0-jd-ESB" secondAttribute="trailing" constant="16" id="Lwn-3O-zZg"/>
+                                <constraint firstItem="dk0-jd-ESB" firstAttribute="top" secondItem="lY4-9e-tXK" secondAttribute="top" id="UAO-cE-JpR"/>
+                                <constraint firstAttribute="bottom" secondItem="dk0-jd-ESB" secondAttribute="bottom" id="X6y-RF-c5t"/>
+                                <constraint firstAttribute="height" constant="21" id="rG7-P2-GFf"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CdE-2f-pbL">
+                            <rect key="frame" x="0.0" y="36" width="375" height="631"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="scrollIndicatorInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="1" minimumInteritemSpacing="2" id="jFm-gV-BeB">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gde-xk-Vgp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3H3-Q1-xyu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gde-xk-Vgp" secondAttribute="trailing" id="h0I-W4-Yvu"/>
+                <constraint firstItem="gde-xk-Vgp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="izf-Zs-QOw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gde-xk-Vgp" secondAttribute="bottom" id="vxG-u6-YLu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
